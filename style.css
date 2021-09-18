@@ -1,0 +1,703 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(104, 104, 104);
+}
+/*INDEX*/
+header{
+    height: 300px;
+    background-color: black;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(75, 75, 75);
+}
+#imagenHeader{
+    border: none;
+}
+nav{
+    height: 150px;
+    background-color: black;
+}
+ul{
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+li a:hover{
+    color: rgb(1, 78, 1);
+    transition: .4s;
+}
+
+main{
+    height: 1500px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 20% 10% 20% 10% 20% 10%;
+    grid-template-areas: "."
+                        "foto1"
+                        "texto1"
+                        "foto2"
+                        "texto2"
+                        "foto3"
+                        "texto3";
+}
+#foto1{
+    grid-area: foto1;
+    width: 70%;
+    height: 80%;
+    align-self: center;
+    justify-self: center;
+}
+#foto1-texto{
+    color: rgb(192, 192, 192);
+    grid-area:texto1 ;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 80px;
+}
+#foto1 h1{
+    color: rgb(1, 78, 1);
+    text-shadow: 1px 1px  rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    border-bottom: 2px solid black;
+    position: relative;
+    bottom: 40px;
+}
+#foto2{
+    grid-area: foto2;
+    width: 70%;
+    align-self: center;
+    justify-self: center;
+}
+#foto2-texto{
+    color: rgb(192, 192, 192);
+    grid-area:texto2 ;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;
+    align-self:flex-start;
+    padding-top: 30px;
+}
+#foto2 h1{
+    color: rgb(1, 78, 1);
+    text-shadow: 1px 1px  rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    border-bottom: 2px solid black;
+    position: relative;
+    bottom: 40px;
+}
+#foto3{
+    grid-area: foto3;
+    width: 70%;
+    align-self: center;
+    justify-self: center;
+}
+#foto3-texto{
+    color: rgb(192, 192, 192);
+    grid-area:texto3 ;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;
+    align-self:flex-start;
+    padding-top: 30px;
+}
+#foto3 h1{
+    color: rgb(1, 78, 1);
+    text-shadow: 1px 1px  rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    border-bottom: 2px solid black;
+    position: relative;
+    bottom: 40px;
+}
+footer{
+    height: 300px;
+    background-color: black;
+}
+footer li{
+    color: rgb(1, 78, 1);
+    font-family: 'Bebas Neue', cursive;
+}
+/*INDEX*/
+
+/*PASELIBRE*/
+#paseLibreTexto{
+    grid-area: foto2;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+#paseLibreTexto-2{
+    grid-area: foto2;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    font-weight: bolder;
+    color: rgb(192, 192, 192);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+
+}
+#paseLibreTexto-3{
+    grid-area: foto2;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    top: 200px;
+}
+#paseLibre-precio{
+    grid-area: texto2;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-weight:bolder;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    color: rgb(192, 164, 3);
+    text-shadow: 1px 1px black;
+}
+
+#foto5{
+    grid-area: foto3;
+    height: 110%;
+    width: 85%;
+    position:relative;
+    left: 25px;
+}
+/*PASELIBRE*/
+
+/*CLASES*/
+.clasesMain{
+    height: 2500px;
+}
+.funcional{
+    grid-area: foto1;
+    display: flex;
+    justify-self: center;
+    align-self:flex-start;
+    height: 65%;
+    width: 80%;
+}
+.funcional:hover{
+    transform: scale(1.3,1.3);
+    transition: 3s;
+}
+.funcionalTexto{
+    grid-area: texto1;
+    text-align: center;
+    font-weight: 600;
+    align-self: flex-end;
+    position: relative;
+    bottom: 70px;
+    color: rgb(192, 192, 192);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.hiit{
+    grid-area: foto2;
+    display: flex;
+    justify-self: center;
+    align-self:flex-start;
+    height: 60%;
+    width: 80%;
+}
+.hiit:hover{
+    transform: scale(1.3,1.3);
+    transition: 3s;
+}
+.hiitTexto{
+    grid-area: texto2;
+    text-align: center;
+    font-weight: 600;
+    align-self: flex-end;
+    position: relative;
+    bottom: 70px;
+    color: rgb(192, 192, 192);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.stepFuncional{
+    grid-area: foto3;
+    display: flex;
+    justify-self: center;
+    align-self:flex-start;
+    height: 60%;
+    width: 80%;
+}
+.stepFuncional:hover{
+    transform: scale(1.3,1.3);
+    transition: 3s;
+}
+.stepFuncionalTexto{
+    grid-area: texto3;
+    text-align: center;
+    font-weight: 600;
+    align-self: flex-end;
+    bottom: 100px;
+    position: relative;
+    color: rgb(192, 192, 192);
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+/*CLASES*/
+
+/*BAR*/
+.sabiasQue{
+    color: rgb(1, 78, 1);
+    text-shadow: 1px 1px  rgb(192, 192, 192);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 200px;
+}
+.barTexto{
+    color: rgb(192, 192, 192);
+    font-size: 20px;
+    text-shadow: 2px 2px rgb(0, 0, 0); 
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 200px;
+}
+.recuerden{
+    color: rgb(1, 78, 1);
+    text-shadow: 1px 1px  rgb(192, 192, 192);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 300px;
+}
+.videoBar{
+    grid-area: texto2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+video{
+    width: 400px;
+    height: 400px;
+}
+/*BAR*/
+
+/*CONTACTO*/
+.nombre{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+.contactate{
+    color: rgb(1, 78, 1);
+    text-shadow: 4px 4px  rgb(97, 97, 97);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 100px;
+}
+.datos{
+    color: rgb(192, 164, 3);
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+.inscribite{
+    color: rgb(1, 78, 1);
+    font-size: 40px;
+    text-shadow: 4px 4px  rgb(97, 97, 97);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 100px;
+}
+form{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+form li + li {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+  }
+  label {
+    display: inline;
+    width: 50px;
+    text-align: center;
+  }
+  input, textarea{
+    font-family: 'Bebas Neue', cursive;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 20px;
+    flex-wrap: nowrap;
+    display: flex;
+  }
+  textarea {
+    height: 100px;
+  }
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+
+}
+@media only screen and (min-width:600px){
+    /*INDEX*/
+    img{
+        width: 100%;
+        
+    }
+    header{
+        height: 300px;
+
+    }
+    nav{
+        height: 100px;
+
+    }
+    ul{
+        flex-direction: row;
+        align-items: center;
+    }
+    main{
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:  "foto1 foto2"
+                              "foto3  foto3" ;
+    }
+    #foto1{
+        width: 80%;
+        height: 40%;
+        justify-self: left;
+        align-self: center;
+    }
+    #foto1-texto{
+        grid-area: foto1;
+        position: relative;
+        top: 230px;
+        right: 50px;
+    }
+    #foto2{
+        width: 80%;
+        height: 40%;
+        position: relative;
+        top: 400px;
+    }
+    #foto2 h1{
+        position: relative;
+        bottom: 50px;
+    }
+    #foto2-texto{
+        grid-area: foto2;
+        position: relative;
+        top: 590px;
+    }
+    #foto3{
+        max-width: 60%;
+        height: 30%;
+        justify-self: center;
+        align-self: center;
+        padding-top: 330px;
+    }
+    #foto3-texto{
+        grid-area: foto3;
+        align-self: center;
+        top: 60px;
+        position: relative;
+        
+    }
+    footer{
+        height: 200px;
+    }
+    
+     /*INDEX*/
+
+    /*PASELIBRE*/
+    #paseLibreTexto,#paseLibreTexto-2,#paseLibreTexto-3{
+        grid-area:foto2;
+        display: flex;
+        align-self: center;
+    }
+    #paseLibre-precio{
+        grid-area: foto2;
+        display: flex;
+        align-self: flex-end;
+    }
+    #foto1{
+        width: 80%;
+    }
+    #foto5{
+        height: 70%;
+         width: 70%;
+        display: flex;
+        justify-self: center;
+        align-content: center;
+    }
+    #paseLibre-precio{
+        position: relative;
+        right: 200px;
+    }
+    /*PASE LIBRE*/
+
+    /*CLASES*/
+
+    .clasesMain{
+        grid-template-columns: 50% 50%;
+        grid-template-rows:    1fr 1fr 1fr ;
+        grid-template-areas:   "funcional funcional"
+                               "hiit      hiit"
+                               "step      step"
+    }
+    .funcional{
+        grid-area: funcional;
+        width: 70%;
+        height: 50%;
+        position: relative;
+        top: 100px;
+    }
+    .funcionalTexto{
+        grid-area: funcional;
+        display: flex;
+        align-self:flex-end;
+        bottom: 30px;
+        font-size: 20px;
+    }
+    .hiit{
+        grid-area: hiit;
+        width: 70%;
+        height: 50%;
+        position: relative;
+        top: 100px;
+    }
+    .hiitTexto{
+        grid-area: hiit;
+        display: flex;
+        align-self:flex-end;
+        bottom: 30px;
+        font-size: 20px;
+    }
+    .stepFuncional{
+        grid-area: step;
+        width: 70%;
+        height: 50%;
+        position: relative;
+        top: 100px;
+    }
+    .stepFuncionalTexto{
+        grid-area: step;
+        display: flex;
+        align-self:flex-end;
+        bottom: 30px;
+        font-size: 20px;
+    }
+    /*Clases*/
+
+    /*Bar*/
+    .barMain{
+        grid-template-columns: 100%;
+        grid-template-rows:    1fr 1fr 1fr ;
+        grid-template-areas:   "sabias"
+                               "texto"
+                               "recuerden"
+                               "video"
+    }
+    .sabiasQue{
+        grid-area: sabias;
+        display: flex;
+        justify-self: center;
+        align-self: flex-end;
+    }
+    .barTexto{
+        grid-area: texto;
+        position: relative;
+        bottom: 100px;
+    }
+    .recuerden{
+        grid-area: recuerden;
+        display: flex;
+        justify-self: center;
+        align-self: flex-start;
+        position: relative;
+        bottom: 250px;
+    }
+    .videoBar{
+        grid-area: video;
+        display: flex;
+        position: relative;
+        bottom: 200px;
+    }
+      /*Bar*/
+
+    /*Contacto*/
+    form{
+        grid-area: inscribite;
+        
+    }
+    form ul{
+        display: block;
+        position: relative;
+        bottom: 120px;
+        font-size: 30px;
+    }
+    input{
+        width: 600px;
+    }
+    textarea{
+        width: 600px;
+    }
+
+    .contactoMain{
+        grid-template-columns: 100%;
+        grid-template-rows:    1fr 1fr 1fr ;
+        grid-template-areas:   "contactate"
+                               "datos"
+                               "inscribite"                      
+    }
+    .contactate{
+        grid-area: contactate;
+    }
+    .datos{
+        grid-area: datos;
+        display: block;
+        line-height: 100px;
+        position: relative;
+        bottom: 200px;
+    }
+    .inscribite{
+        grid-area: inscribite;
+        position: relative;
+        bottom: 200px;
+    }
+
+    }
+   
+   
+@media only screen and ( min-width: 992px){
+    header{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    header img{
+        width: 70%;
+    }
+    /*Index*/
+   #foto1{
+       width: 60%;
+       padding-left: 200px;
+   }
+   #foto1-texto{
+       padding-left: 120px;
+   }
+   #foto2{
+       width: 60%;
+       padding-right:200px ;
+   }
+   #foto2-texto{
+       padding-right: 200px;
+   }
+   #foto3{
+       width: 40%;
+   }
+   /*Index*/
+
+   /*Pase Libre*/
+    #paseLibreTexto{
+        padding-bottom: 150px;
+    }
+    #paseLibreTexto-3{
+        padding-top: 100px;
+    }
+    #paseLibre-precio{
+        padding-left: 400px;
+    }
+    #foto5{
+        width: 30%;
+    }
+
+    /*Pase Libre*/
+
+   /*Clases*/
+   .funcional{
+       width: 40%;
+   }
+    .hiit{
+        width: 40%;
+    }
+    .stepFuncional{
+        width: 40%;
+    }
+    /*Clases*/
+    #foto1{
+        width: 50%;
+    }
+
+    /*Bar*/
+    .sabiasQue{
+        font-size: 60px;
+    }
+    .barTexto{
+        font-size: 40px;
+    }
+    .recuerden{
+        font-size: 60px;
+    }
+    /*Bar*/
+
+    /*Contacto*/
+    .contactate{
+        font-size: 60px;
+    }
+    .datos{
+        font-size: 60px;
+    }
+    .inscribite{
+        font-size: 60px;
+    }
+    /*Contacto*/
+  
+}
+
